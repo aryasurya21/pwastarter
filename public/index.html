@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Starter</title>
+    <link href="index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <form id="form-container">
+            <div class="form-group">
+                <label for="ipTaskName">Task name</label>
+                <input type="text" class="form-control" id="ipTaskName" aria-describedby="taskName" placeholder="Enter task name">
+                <small id="taskName" class="form-text text-muted">Remember to fill your task today.</small>
+                <input type="hidden" id="hdfTask"/>
+            </div>
+            <div id="buttonContainer">
+                <button id="btnSubmit" type="submit" class="btn btn-primary">SUBMIT</button>
+                <button id="btnClosePopup" class="btn btn-danger">CLOSE</button>
+            </div>
+        </form>
+    </div>
+    <main class="container main">
+        <div id="header-container">
+            <h2>Task Manager</h2>
+        </div>
+        <button class="btn btn-primary" id="btnAdd">ADD TASK</button>                                        
+        <div class="table-responsive">          
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </main>  
+    <script src="index.js"></script>
+</body>
+</html>
