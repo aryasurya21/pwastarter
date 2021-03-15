@@ -36,9 +36,14 @@ body {
 }
 
 #header-container {
-    background: #0069D9;
+    background: #007BFF;
     padding: 2rem;
     margin: 0;
     border-radius: 10px;
     color: white;
+    font-family: 'Ranchers', cursive
+}
+
+#header-container h2 {
+    font-size: 5rem;
 }
